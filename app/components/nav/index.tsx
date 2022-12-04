@@ -32,7 +32,7 @@ export default function Nav() {
       }
 
       if (currentScroll > prevScroll) {
-        if (navRef && navRef.current) navRef.current.style.top = "-80px";
+        if (navRef && navRef.current) navRef.current.style.top = "-120px";
       } else {
         if (navRef && navRef.current) navRef.current.style.top = "0";
       }
@@ -48,7 +48,7 @@ export default function Nav() {
   return (
     <>
       <nav ref={navRef} className="w-full h-[70px] fixed top-0 transition-all ease-in-out duration-300 flex items-end justify-center z-10">
-        <div className="flex items-end justify-between w-full max-w-[1200px] px-4">
+        <div className="relative flex items-end justify-between w-full max-w-[1200px] px-4">
           <div className="flex items-center">
             <img
               src={icon}
@@ -67,12 +67,12 @@ export default function Nav() {
             />
           </div>
         </div>
+        <div className={`${isOpen ? '-right-[5%]' : 'right-full'} absolute -bottom-[50px] bg-amber-900 h-[40px] w-[110%] transition-all ease-in-out duration-1000 flex justify-evenly items-center rounded`}>
+          <a href="#top" className="text-white">Home</a>
+          <a href="#about" className="text-white">About</a>
+          <a href="#contact" className="text-white">Contact</a>
+        </div>
       </nav>
-      <div className={`${isOpen ? '-right-[5%]' : 'right-full'} fixed top-[75px] bg-amber-900 h-[40px] w-[110%] transition-all ease-in-out duration-1000 flex justify-evenly items-center rounded`}>
-        <a href="#top" className="text-white">Home</a>
-        <a href="#about" className="text-white">About</a>
-        <a href="#contact" className="text-white">Contact</a>
-      </div>
     </>
   );
 }

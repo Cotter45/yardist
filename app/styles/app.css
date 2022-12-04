@@ -517,6 +517,10 @@ video {
   position: fixed;
 }
 
+.absolute {
+  position: absolute;
+}
+
 .relative {
   position: relative;
 }
@@ -559,6 +563,34 @@ video {
 
 .-right-\[5\%\] {
   right: -5%;
+}
+
+.bottom-\[75px\] {
+  bottom: 75px;
+}
+
+.bottom-\[0\] {
+  bottom: 0;
+}
+
+.bottom-0 {
+  bottom: 0px;
+}
+
+.-bottom-0 {
+  bottom: -0px;
+}
+
+.-bottom-\[40px\] {
+  bottom: -40px;
+}
+
+.-bottom-\[60px\] {
+  bottom: -60px;
+}
+
+.-bottom-\[50px\] {
+  bottom: -50px;
 }
 
 .z-10 {
