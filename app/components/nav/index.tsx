@@ -85,7 +85,7 @@ export default function Nav() {
           <button
             onClick={() => {
               window && window.scrollTo({
-                top: window.innerHeight,
+                top: window.innerHeight + 120,
                 behavior: 'smooth'
               });
             }}
@@ -96,7 +96,7 @@ export default function Nav() {
           <button
             onClick={() => {
               window && window.scrollTo({
-                top: window.innerHeight * 2,
+                top: (window.innerHeight * 2) + 120,
                 behavior: 'smooth'
               });
             }}
