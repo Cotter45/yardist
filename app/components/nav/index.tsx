@@ -6,6 +6,7 @@ import icon from "./icon.png";
 export default function Nav() {
   const navRef = useRef<HTMLDivElement>(null);
   const prevScrollRef = useRef(0);
+  const screenHeight = useRef(0);
   const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
@@ -22,11 +23,13 @@ export default function Nav() {
   useEffect(() => {
     if (!window) return;
 
+    screenHeight.current = window.innerHeight;
+
     const handleScroll = () => {
       const currentScroll = window && window.pageYOffset;
       const prevScroll = prevScrollRef.current;
 
-      if (currentScroll < 80) {
+      if (currentScroll < screenHeight.current) {
         if (navRef && navRef.current) navRef.current.style.top = "0";
         return;
       }
@@ -47,13 +50,13 @@ export default function Nav() {
 
   return (
     <>
-      <nav ref={navRef} className="w-full h-[70px] fixed top-0 transition-all ease-in-out duration-300 flex items-end justify-center z-10">
-        <div className="relative flex items-end justify-between w-full max-w-[1200px] px-4">
+      <nav ref={navRef} className="bg-neutral-100 w-full h-[70px] fixed top-0 transition-all ease-in-out duration-300 flex items-end justify-center z-40">
+        <header className="relative flex items-end justify-between w-full max-w-[1200px] px-4">
           <div className="flex items-center">
             <img
               src={icon}
               alt="Logo"
-              className="h-[60px] aspect-video"
+              className="h-[60px] aspect-video mb-1"
             />
           </div>
           <div className="h-full flex items-end">
@@ -66,11 +69,41 @@ export default function Nav() {
               label="Show menu"
             />
           </div>
-        </div>
+        </header>
         <div className={`${isOpen ? '-right-[5%]' : 'right-full'} absolute -bottom-[50px] bg-yellow-900 h-[40px] w-[110%] transition-all ease-in-out duration-1000 flex justify-evenly items-center rounded`}>
-          <a href="#top" className="text-white">Home</a>
-          <a href="#about" className="text-white">About</a>
-          <a href="#contact" className="text-white">Contact</a>
+          <button 
+            onClick={() => {
+              window && window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+              });
+            }}
+            className="text-white"
+          >
+            Home
+          </button>
+          <button
+            onClick={() => {
+              window && window.scrollTo({
+                top: window.innerHeight,
+                behavior: 'smooth'
+              });
+            }}
+            className="text-white"
+          >
+            About
+          </button>
+          <button
+            onClick={() => {
+              window && window.scrollTo({
+                top: window.innerHeight * 2,
+                behavior: 'smooth'
+              });
+            }}
+            className="text-white"
+          >
+            Contact
+          </button>
         </div>
       </nav>
     </>
