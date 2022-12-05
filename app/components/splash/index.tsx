@@ -8,7 +8,7 @@ export default function Splash() {
         loop={true}
         muted={true}
         playsInline={true}
-        className="w-[100vw] h-[100vh] object-cover"
+        className="w-[100vw] h-[100vh] object-cover absolute z-0"
         src="https://categories.api.godaddy.com/v4/videos/raw/video/o35ayQk"
       ></video>
     </div>
