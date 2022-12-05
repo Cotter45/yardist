@@ -51,13 +51,13 @@ export default function Footer() {
           style={{
             opacity: totalScroll ? (scrollY / totalScroll) * 1.5 : 0,
           }}
-          className={`text-white whitespace-nowrap absolute bottom-[25px] left-[50%] -translate-x-[50%] text-xs z-20 bg-[rgba(20,83,45,.6)] p-2 rounded`}
+          className={`text-white whitespace-nowrap absolute bottom-[10px] left-[50%] -translate-x-[50%] text-xs z-20 bg-[rgba(20,83,45,.6)] p-2 rounded`}
         >
           Copyright © 2022 The Yardist Lawn Services - All Rights Reserved.
         </h3>
         {window && window.innerWidth > 900 && (
           <>
-            <picture>
+            <picture className="max-h-[100px] overflow-hidden">
               <source srcSet={cutGrassLgP} type="image/webp" />
               <source srcSet={cutGrassLg} type="image/jpeg" />
               <img
@@ -66,7 +66,7 @@ export default function Footer() {
                 style={{
                   filter: "hue-rotate(-25deg) brightness(1)",
                 }}
-                className="w-full h-full max-h-[300px] fixed bottom-0 left-0 z-10 object-fill"
+                className="w-full h-full max-h-[200px] fixed bottom-0 left-0 z-0 object-fill"
               />
             </picture>
             <picture className="max-h-[100px] overflow-hidden">
@@ -77,11 +77,11 @@ export default function Footer() {
                 alt="Grass"
                 style={{
                   bottom: totalScroll
-                    ? `${Math.floor((scrollY / totalScroll) * 100) - 175}px`
-                    : "-175px",
+                    ? `${Math.floor((scrollY / totalScroll) * 100) - 275}px`
+                    : "-275px",
                   filter: "hue-rotate(-20deg) saturate(1.3) brightness(.7)",
                 }}
-                className="w-full h-full max-h-[300px] fixed bottom-0 left-0 z-10 object-fill"
+                className="w-full h-full max-h-[350px] fixed bottom-0 left-0 z-0 object-fill"
               />
             </picture>
           </>
@@ -97,7 +97,7 @@ export default function Footer() {
                 style={{
                   filter: "hue-rotate(-25deg) brightness(1)",
                 }}
-                className="w-full h-full max-h-[300px] fixed bottom-0 left-0 z-10 object-fill"
+                className="w-full h-full max-h-[200px] fixed bottom-0 left-0 z-10 object-fill"
               />
             </picture>
             <picture className="max-h-[100px] overflow-hidden">
@@ -112,7 +112,7 @@ export default function Footer() {
                     : "-175px",
                   filter: "hue-rotate(-20deg) saturate(1.3) brightness(.7)",
                 }}
-                className="w-full h-full max-h-[300px] fixed bottom-0 left-0 z-10 object-fill"
+                className="w-full h-full max-h-[250px] fixed bottom-0 left-0 z-10 object-fill"
               />
             </picture>
           </>

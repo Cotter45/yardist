@@ -91,7 +91,7 @@ export default function Nav() {
             }}
             className="text-white"
           >
-            About
+            Services
           </button>
           <button
             onClick={() => {
