@@ -67,7 +67,7 @@ export default function Nav() {
             />
           </div>
         </div>
-        <div className={`${isOpen ? '-right-[5%]' : 'right-full'} absolute -bottom-[50px] bg-amber-900 h-[40px] w-[110%] transition-all ease-in-out duration-1000 flex justify-evenly items-center rounded`}>
+        <div className={`${isOpen ? '-right-[5%]' : 'right-full'} absolute -bottom-[50px] bg-yellow-900 h-[40px] w-[110%] transition-all ease-in-out duration-1000 flex justify-evenly items-center rounded`}>
           <a href="#top" className="text-white">Home</a>
           <a href="#about" className="text-white">About</a>
           <a href="#contact" className="text-white">Contact</a>
