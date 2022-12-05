@@ -4,6 +4,10 @@ import grassP from "./grass.webp";
 import grass from "./grass.png";
 import cutGrass from "./cutGrass.png";
 import cutGrassP from "./cutGrass.webp";
+import grassLg from "./grassLg.png";
+import grassLgP from "./grassLg.webp";
+import cutGrassLg from "./cutGrassLg.png";
+import cutGrassLgP from "./cutGrassLg.webp";
 
 export default function Footer() {
   const [scrollY, setScrollY] = useState(0);
@@ -54,10 +58,10 @@ export default function Footer() {
         {window && window.innerWidth > 900 && (
           <>
             <picture>
-              <source srcSet="./cutGrassLg.webp" type="image/webp" />
-              <source srcSet="./cutGrassLg.png" type="image/jpeg" />
+              <source srcSet={cutGrassLgP} type="image/webp" />
+              <source srcSet={cutGrassLg} type="image/jpeg" />
               <img
-                src="./cutGrassLg.png"
+                src={cutGrassLg}
                 alt="Grass"
                 style={{
                   filter: "hue-rotate(-25deg) brightness(1)",
@@ -66,10 +70,10 @@ export default function Footer() {
               />
             </picture>
             <picture className="max-h-[100px] overflow-hidden">
-              <source srcSet="./grassLg.webp" type="image/jpeg" />
-              <source srcSet="./grassLg.png" type="image/webp" />
+              <source srcSet={grassLgP} type="image/jpeg" />
+              <source srcSet={grassLg} type="image/webp" />
               <img
-                src="./grassLg.png"
+                src={grassLg}
                 alt="Grass"
                 style={{
                   bottom: totalScroll
