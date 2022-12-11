@@ -32,7 +32,7 @@ export default function Index() {
       >
         <section
           id="home"
-          className="sticky top-[70px] bottom-0 w-full h-[100vh] flex items-center justify-center z-40"
+          className="sticky top-[70px] bottom-0 w-full h-[100vh] flex items-center justify-center z-0"
         >
           <Splash />
         </section>
