@@ -7,7 +7,7 @@ export default function Splash() {
         loop={true}
         muted={true}
         playsInline={true}
-        className="w-[100vw] h-[100vh] object-cover absolute z-0"
+        className="w-[100vw] h-[110vh] object-cover absolute z-0"
         src="https://categories.api.godaddy.com/v4/videos/raw/video/o35ayQk"
       ></video>
       <div className="w-full h-[90vh] flex flex-col items-center justify-center">

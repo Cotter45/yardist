@@ -50,14 +50,22 @@ export default function Nav() {
 
   return (
     <>
-      <nav ref={navRef} className="bg-neutral-100 w-full h-[70px] fixed top-0 transition-all ease-in-out duration-300 flex items-end justify-center z-40">
+      <nav
+        ref={navRef}
+        className="bg-neutral-100 w-full h-[70px] fixed top-0 transition-all ease-in-out duration-300 flex items-end justify-center z-40"
+      >
         <header className="relative flex items-end justify-between w-full max-w-[1200px] px-4">
-          <div className="flex items-center">
-            <img
-              src={icon}
-              alt="Logo"
-              className="h-[60px] aspect-video mb-1"
-            />
+          <div
+            onClick={() => {
+              window &&
+                window.scrollTo({
+                  top: 0,
+                  behavior: "smooth",
+                });
+            }}
+            className="flex items-center cursor-pointer"
+          >
+            <img src={icon} alt="Logo" className="h-[60px] aspect-video mb-1" />
           </div>
           <div className="h-full flex items-end">
             <Hamburger
@@ -70,13 +78,18 @@ export default function Nav() {
             />
           </div>
         </header>
-        <div className={`${isOpen ? '-right-[5%]' : 'right-full'} absolute -bottom-[50px] bg-yellow-900 h-[40px] w-[110%] transition-all ease-in-out duration-1000 flex justify-evenly items-center rounded`}>
-          <button 
+        <div
+          className={`${
+            isOpen ? "-right-[5%]" : "right-full"
+          } absolute -bottom-[50px] bg-yellow-900 h-[40px] w-[110%] transition-all ease-in-out duration-1000 flex justify-evenly items-center rounded`}
+        >
+          <button
             onClick={() => {
-              window && window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-              });
+              window &&
+                window.scrollTo({
+                  top: 0,
+                  behavior: "smooth",
+                });
             }}
             className="text-white"
           >
@@ -84,10 +97,11 @@ export default function Nav() {
           </button>
           <button
             onClick={() => {
-              window && window.scrollTo({
-                top: window.innerHeight,
-                behavior: 'smooth'
-              });
+              window &&
+                window.scrollTo({
+                  top: window.innerHeight + 60,
+                  behavior: "smooth",
+                });
             }}
             className="text-white"
           >
@@ -95,10 +109,11 @@ export default function Nav() {
           </button>
           <button
             onClick={() => {
-              window && window.scrollTo({
-                top: (window.innerHeight * 2),
-                behavior: 'smooth'
-              });
+              window &&
+                window.scrollTo({
+                  top: window.innerHeight * 2 + 60,
+                  behavior: "smooth",
+                });
             }}
             className="text-white"
           >
