@@ -122,7 +122,6 @@ export default function Footer() {
   }
 
   return (
-    <div className={` transition-all duration-500 ease-in-out flex`}>
-    </div>
+    <div />
   );
 }

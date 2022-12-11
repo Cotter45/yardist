@@ -1,3 +1,8 @@
 * {
   scroll-behavior: smooth;
 }
+
+/* ::placeholder {
+  color: #fff !important;
+  opacity: 1;
+} */

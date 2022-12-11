@@ -10,6 +10,7 @@ import {
 
 import styles from "./styles/app.css"
 import index from "./styles/index.css"
+import splash from "./styles/splash.css"
 
 export const meta: MetaFunction = () => ({
   charset: "utf-8",
@@ -27,7 +28,8 @@ export const meta: MetaFunction = () => ({
 export function links() {
   return [
     { rel: "stylesheet", href: styles },
-    { rel: "stylesheeet", href: index }
+    { rel: "stylesheeet", href: index },
+    { rel: "stylesheet", href: splash },
   ];
 }
 
