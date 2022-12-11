@@ -1,6 +1,6 @@
 export default function Splash() {
   return (
-    <div className="relative w-full h-full z-50">
+    <div className="relative top-0 w-full h-full">
       <video
         poster="https://img1.wsimg.com/isteam/videos/o35ayQk"
         autoPlay={true}
@@ -10,7 +10,7 @@ export default function Splash() {
         className="w-[100vw] h-[100vh] object-cover absolute z-0"
         src="https://categories.api.godaddy.com/v4/videos/raw/video/o35ayQk"
       ></video>
-      <div className="absolute z-10 w-full h-[90vh] flex flex-col items-center justify-center">
+      <div className="w-full h-[90vh] flex flex-col items-center justify-center">
         <div className="w-[90vw] h-[10vh] rounded-xl flex flex-col gap-2 items-center justify-center backdrop-blur-sm">
           <p className="text-white text-3xl md:text-5xl font-bold italic">
             Forget about the Jones's
@@ -23,7 +23,7 @@ export default function Splash() {
           </div>
         </div>
 
-        <div className="relative w-full flex flex-col items-center justify-center z-50">
+        <div className="w-full flex flex-col items-center justify-center z-50">
           <div className="flex justify-evenly mt-10 gap-4">
             <a
               href="tel:1-801-809-0000"
