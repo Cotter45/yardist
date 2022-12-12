@@ -11,13 +11,24 @@ export default function Splash() {
         src="https://categories.api.godaddy.com/v4/videos/raw/video/o35ayQk"
       ></video>
       <div className="w-full h-[90vh] flex flex-col items-center justify-center">
-        <div className="w-[90vw] h-[10vh] rounded-xl flex flex-col gap-2 items-center justify-center backdrop-blur-sm">
-          <p className="text-white text-3xl md:text-5xl font-bold italic">
+        <div className="w-full h-[20vh] rounded-xl flex flex-col gap-2 items-center justify-center backdrop-blur-sm">
+          <p
+            style={{ textShadow: "0 0 8px rgba(0,0,0,1)" }}
+            className="text-neutral-100 text-3xl md:text-5xl font-bold italic"
+          >
             Forget about the Jones's
           </p>
-          <div className="text-white py-2 px-16  backdrop-blur-sm flex gap-4 md:gap-8 items-center justify-center w-full">
-            <p className="text-3xl">FREE</p>
-            <p className="text-md max-w-[100px] md:max-w-full">
+          <div className="text-neutral-200 font-bold py-2 px-16 flex gap-4 md:gap-8 items-center justify-center w-full">
+            <p
+              style={{ textShadow: "0 0 8px rgba(0,0,0,1)" }}
+              className="text-3xl"
+            >
+              FREE
+            </p>
+            <p
+              style={{ textShadow: "0 0 8px rgba(0,0,0,1)" }}
+              className="text-md max-w-[100px] md:max-w-full"
+            >
               Consultation & Estimate
             </p>
           </div>

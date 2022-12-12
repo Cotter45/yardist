@@ -3,6 +3,7 @@ import Footer from "~/components/footer";
 import Splash from "~/components/splash";
 
 import logo from "../components/splash/3d_logo.png";
+import map from "../components/splash/map.png";
 import { useState } from "react";
 
 export default function Index() {
@@ -28,7 +29,7 @@ export default function Index() {
       <Nav />
       <main
         id="main"
-        className="relative top-0 min-h-[340vh] bg-neutral-100 scroll-smooth overflow-x-hidden"
+        className="relative z-0 top-0 h-[340vh] min-h-[340vh] bg-neutral-100 scroll-smooth overflow-x-hidden"
       >
         <section
           id="home"
@@ -36,18 +37,48 @@ export default function Index() {
         >
           <Splash />
         </section>
-        <div className="relative top-[100vh] w-full h-[200vh]">
+        <div className="relative top-[100vh] w-full h-[200vh] z-20">
           <section
             id="services"
-            className="relative w-full h-[100vh] flex items-center justify-center z-10 bg-neutral-100"
+            className="relative w-full h-[100vh] z-20 bg-neutral-100"
           >
-            {/* <div
-              style={{
-                clipPath:
-                  "polygon(0% 0%, 0% 100%, 5% 95%, 5% 5%, 95% 5%, 95% 95%, 5% 95%, 0 100%, 100% 100%, 100% 0%)",
-              }}
-              className="absolute top-0 left-0 w-full h-full bg-neutral-100 z-10"
-            ></div> */}
+            <h3 className="w-full text-4xl font-bold z-10 border-b p-4 pt-10">
+              Our Services
+            </h3>
+            <div className="w-full flex flex-col gap-4 p-4">
+              <div className="w-full flex flex-col md:flex-row items-center justify-start md:pt-10 gap-6 md:gap-4">
+                <div className="w-[90%] md:w-[60%] flex flex-col gap-2">
+                  <p className="text-neutral-700 indent-2 text-sm md:text-base">
+                    We offer our services to residential and commercial properties
+                    throughout the greater Philadelphia area. We are a full-service
+                    lawn care company equipped to handle all of your lawn care needs. We offer a variety of services including:
+                  </p>
+                  <ul className="list-disc list-inside text-sm md:text-base pl-8">
+                    <li>Weekly Lawn Care</li>
+                    <li>Spring and Fall Cleanups</li>
+                    <li>Leaf Removal</li>
+                    <li>Snow Removal</li>
+                    <li>Ice Management</li>
+                    <li>Landscaping</li>
+                    <li>Tree and Shrub Care</li>
+                    <li>Edging</li>
+                    <li>Trimming</li>
+                    <li>Blowing</li>
+                    <li>Pruning</li>
+                    <li>Planting</li>
+                    <li>Seeding</li>
+                    <li>Drainage</li>
+                    <li>Composting</li>
+                    <li>Mulching</li>
+                  </ul>
+                </div>
+                <img 
+                  src={map}
+                  alt="Our Service Area Map"
+                  className="h-[30vh] md:h-[65vh] md:w-[50%] max-w-[600px] aspect-video object-contain mix-blend-multiply"
+                />
+              </div>
+            </div>
           </section>
           <section
             id="contact"
@@ -121,7 +152,7 @@ export default function Index() {
           </section>
           <section
             id="home"
-            className="relative top-0 left-0 w-full h-[40vh] flex justify-between z-10 bg-neutral-300"
+            className="relative top-0 left-0 w-full h-[40vh] flex justify-between z-10 bg-neutral-200"
           >
             <div className="w-[50%] flex flex-col gap-4 p-4">
               <h4 className="underline">Find us on social media</h4>
