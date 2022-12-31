@@ -1,6 +1,6 @@
 export default function Splash() {
   return (
-    <div className="relative top-0 w-full h-full">
+    <div className="relative -top-10 w-full h-full z-50">
       <video
         poster="https://img1.wsimg.com/isteam/videos/o35ayQk"
         autoPlay={true}
