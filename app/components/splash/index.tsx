@@ -37,13 +37,13 @@ export default function Splash() {
         <div className="w-full flex flex-col items-center justify-center z-50">
           <div className="flex justify-evenly mt-10 gap-4">
             <a
-              href="tel:1-801-809-0000"
+              href="tel:1-610-608-6825"
               className="bg-yellow-900 text-white py-2 px-16 rounded-xl shadow-md shadow-neutral-800 hover:shadow-lg hover:scale-105 transition-all ease-in-out duration-500 flex gap-4 md:gap-8 items-center"
             >
               Call Now
             </a>
             <a
-              href="mailto:test@test.com?subject=The%20Yardist%20Lawn%20Services"
+              href="mailto:theyardistlawnservice@gmail.com?subject=The%20Yardist%20Lawn%20Services"
               className="bg-yellow-900 text-white py-2 px-16 rounded-xl shadow-md shadow-neutral-800 hover:shadow-lg hover:scale-105 transition-all ease-in-out duration-500 flex gap-4 md:gap-8 items-center"
             >
               Email Us

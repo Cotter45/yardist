@@ -119,6 +119,18 @@ export default function Nav() {
           >
             Contact
           </button>
+          <button
+            onClick={() => {
+              window &&
+                window.scrollTo({
+                  top: window.innerHeight * 3 + 60,
+                  behavior: "smooth",
+                });
+            }}
+            className="text-white"
+          >
+            Recent
+          </button>
         </div>
       </nav>
     </>
