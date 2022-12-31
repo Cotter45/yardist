@@ -26,7 +26,7 @@ export default function Contact() {
       id="contact"
       className="relative w-full h-[100vh] flex flex-col items-center justify-center gap-6 bg-neutral-800 z-10"
     >
-      <h3 className="w-full self-center max-w-[800px] p-4 text-4xl font-bold text-white z-10 border-b border-neutral-600">
+      <h3 className="w-full self-center p-4 text-4xl font-bold text-white z-10 border-b border-neutral-600">
         Contact Us
       </h3>
       <p className="w-full self-center max-w-[600px] pl-6 text-neutral-300 z-10 indent-2">

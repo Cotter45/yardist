@@ -39,7 +39,7 @@ export default function Recent() {
       id="recent-work"
       className="relative top-0 left-0 w-full h-[65vh] flex flex-col justify-evenly z-10 bg-neutral-100"
     >
-      <h3 className="w-full text-4xl font-bold z-10 border-b p-4">
+      <h3 className="w-full text-4xl font-bold z-10 border-b p-4 pt-10">
         Recent Work
       </h3>
       <Carousel data={data} />
