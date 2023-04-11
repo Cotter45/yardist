@@ -71,7 +71,7 @@ export default function App() {
         <Meta />
         <Links />
       </head>
-      <body className="scroll-smooth relative min-h-[340vh]">
+      <body className="scroll-smooth relative min-h-[463vh]">
         <Outlet />
         <ScrollRestoration />
         <Scripts />

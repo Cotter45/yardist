@@ -11,7 +11,7 @@ export default function Index() {
       <Nav />
       <main
         id="main"
-        className="relative z-0 top-0 h-[340vh] min-h-[405vh] bg-neutral-100 scroll-smooth overflow-x-hidden"
+        className="relative z-0 top-0 min-h-[405vh] bg-neutral-100 scroll-smooth overflow-x-hidden"
       >
         <section
           id="home"
@@ -19,17 +19,17 @@ export default function Index() {
         >
           <Splash />
         </section>
-        <div className="relative top-[100vh] w-full h-[200vh] z-20">
+        <div className="relative top-[100vh] w-full h-[240vh] z-20">
           <Services />
-          <Contact />
           <Recent />
+          <Contact />
           <section
             id="home"
-            className="relative top-0 left-0 w-full h-[40vh] flex justify-evenly z-10 bg-neutral-200"
+            className="relative top-0 left-0 w-full h-[40vh] flex justify-evenly z-40 bg-neutral-200"
           >
-            <div className="w-[50%] flex flex-col items-center gap-4 p-4">
+            <div className="w-[50%] flex flex-col items-start gap-4 p-4">
               <h4 className="underline">Find us on social media</h4>
-              <div className="">
+              <div className="pl-4">
                 <a
                   href="https://www.facebook.com/TheYardistLawnServices/"
                   role="button"
@@ -52,7 +52,7 @@ export default function Index() {
                 </a>
               </div>
 
-              <div className="">
+              <div className="pl-4">
                 <a
                   href="https://www.instagram.com/the_yardist_lawn_service/?fbclid=IwAR28Q2i5zNQVs9JLHbPzGQOUGbtIPgp8VZCjxmkX9PDO6zm929i3Og_cvOA"
                   role="button"
@@ -75,9 +75,9 @@ export default function Index() {
               </div>
             </div>
 
-            <div className="w-[50%] flex flex-col items-center gap-4 p-4">
+            <div className="w-[50%] flex flex-col items-start gap-4 p-4">
               <h4 className="underline">Our Specialties</h4>
-              <ul className="list-disc list-inside">
+              <ul className="list-disc list-inside text-sm pl-4">
                 <li>Lawn Maintenance</li>
                 <li>Landscaping Installs</li>
                 <li>Spring / Fall Clean Ups</li>
@@ -87,6 +87,7 @@ export default function Index() {
             </div>
           </section>
         </div>
+        <div className="opacity-0 h-full min-h-[58vh]" />
         <footer className="fixed bottom-0 h-[50px] w-full z-20">
           <Footer />
         </footer>
