@@ -4,7 +4,7 @@ export default function Services() {
   return (
     <section
       id="services"
-      className="relative w-full h-[100dvh] z-20 bg-neutral-100"
+      className="relative w-full h-[100dvh] z-20 bg-white text-neutral-700"
     >
       <h3 className="w-full text-4xl font-bold z-10 border-b p-4 pt-10">
         Our Services
@@ -12,7 +12,7 @@ export default function Services() {
       <div className="w-full flex flex-col gap-4 p-4">
         <div className="w-full flex flex-col md:flex-row items-center justify-start md:pt-10 gap-6 md:gap-4">
           <div className="w-[90%] md:w-[60%] flex flex-col gap-2">
-            <p className="text-neutral-700 indent-2 text-sm md:text-lg">
+            <p className="indent-2 text-sm md:text-lg">
               We offer our services to residential and commercial properties
               throughout the greater Philadelphia area. We are a full-service
               lawn care company equipped to handle all of your lawn care needs.
@@ -40,7 +40,7 @@ export default function Services() {
           <img
             src={map}
             alt="Our Service Area Map"
-            className="h-[40vh] md:h-[65vh] md:w-[50%] max-w-[600px] aspect-video object-contain mix-blend-multiply"
+            className="h-[35vh] md:h-[65vh] md:w-[50%] max-w-[600px] aspect-video object-contain"
           />
         </div>
       </div>

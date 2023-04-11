@@ -111,25 +111,25 @@ export default function Nav() {
             onClick={() => {
               window &&
                 window.scrollTo({
-                  top: window.innerHeight * 2 + 60,
-                  behavior: "smooth",
-                });
-            }}
-            className="text-white"
-          >
-            Contact
-          </button>
-          <button
-            onClick={() => {
-              window &&
-                window.scrollTo({
-                  top: window.innerHeight * 3 + 60,
+                  top: window.innerHeight * 2 + 20,
                   behavior: "smooth",
                 });
             }}
             className="text-white"
           >
             Recent
+          </button>
+          <button
+            onClick={() => {
+              window &&
+                window.scrollTo({
+                  top: window.innerHeight * 3 - 180,
+                  behavior: "smooth",
+                });
+            }}
+            className="text-white"
+          >
+            Contact
           </button>
         </div>
       </nav>

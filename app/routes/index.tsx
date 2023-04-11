@@ -25,11 +25,11 @@ export default function Index() {
           <Contact />
           <section
             id="home"
-            className="relative top-0 left-0 w-full h-[40vh] flex justify-evenly z-40 bg-neutral-200"
+            className="relative top-0 left-0 w-full h-[40vh] flex justify-evenly z-40 bg-slate-950 text-white"
           >
-            <div className="w-[50%] flex flex-col items-start gap-4 p-4">
-              <h4 className="underline">Find us on social media</h4>
-              <div className="pl-4">
+            <div className="w-[50%] flex flex-col items-start md:items-center gap-4 p-4 pt-20">
+              <h4 className="underline self-start lg:pl-10 whitespace-pre">Find us on social media</h4>
+              <div className="pl-4 hover:scale-105 transition-all duration-300 ease-in-out">
                 <a
                   href="https://www.facebook.com/TheYardistLawnServices/"
                   role="button"
@@ -52,12 +52,13 @@ export default function Index() {
                 </a>
               </div>
 
-              <div className="pl-4">
+              <div className="pl-4 hover:scale-105 transition-all duration-300 ease-in-out">
                 <a
                   href="https://www.instagram.com/the_yardist_lawn_service/?fbclid=IwAR28Q2i5zNQVs9JLHbPzGQOUGbtIPgp8VZCjxmkX9PDO6zm929i3Og_cvOA"
                   role="button"
                   className="flex items-center gap-2"
-                  target={"_blank"} rel="noreferrer" 
+                  target={"_blank"}
+                  rel="noreferrer"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -75,8 +76,8 @@ export default function Index() {
               </div>
             </div>
 
-            <div className="w-[50%] flex flex-col items-start gap-4 p-4">
-              <h4 className="underline">Our Specialties</h4>
+            <div className="w-[50%] flex flex-col items-start md:items-center gap-4 p-4 pt-20">
+              <h4 className="underline self-start lg:pl-10">Our Specialties</h4>
               <ul className="list-disc list-inside text-sm pl-4">
                 <li>Lawn Maintenance</li>
                 <li>Landscaping Installs</li>
@@ -87,7 +88,7 @@ export default function Index() {
             </div>
           </section>
         </div>
-        <div className="opacity-0 h-full min-h-[58vh]" />
+        <div className="opacity-0 h-full min-h-[100vh]" />
         <footer className="fixed bottom-0 h-[50px] w-full z-20">
           <Footer />
         </footer>
